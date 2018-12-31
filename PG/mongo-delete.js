@@ -9,9 +9,12 @@ mongo.connect('mongodb://localhost:27017/TodoApp1',(err,client)=>{
   //  db.collection('Users').deleteMany({name: 'Gagan1'}).then(function(result){
     //  console.log(result);
     //})
+    //findoneandupdate
     db.collection('Users').findOneAndDelete({name: 'Gagan2'}).then((res)=>{
       console.log(res)
     })
+
+    //deleteone  --same as deleteMany
   }
 
 })
